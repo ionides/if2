@@ -1,0 +1,29 @@
+
+%\begin{algorithm}[t]
+%\hspace{-2mm}
+\noindent\begin{tabular}{l}
+\hline
+{\bf Algorithm~{\IIS}. Iterated importance sampling}\rule[-1.5mm]{0mm}{6mm}\\
+\hline
+{\bf input:}\rule[-1.5mm]{0mm}{6mm} \\
+\begin{tabular}{ll}
+Simulator for $f_{X}(x\giventh\theta)$ &
+Evaluator for $f_{Y|X}(y\given x\giventh\theta)$\\
+Data, $y^*$ &
+Number of iterations, $M$ \\
+Initial parameter swarm, $\{\Theta^0_j, \mbox{ $j$ in $1\mycolon J$}\}$ &
+Number of particles, $J$ \\
+Perturbation density, $h(\theta\given\varphi\giventh\sigma)$&
+Perturbation sequence, $\sigma_{1:M}$ 
+\end{tabular}\\
+{\bf output:}\rule[-1.5mm]{0mm}{6mm} 
+Final parameter swarm, $\{\Theta^M_j, \mbox{ $j$ in $1\mycolon J$}\}$ \\
+For $m$ in $1\mycolon M$\rule[0mm]{0mm}{5mm}\\
+\asp     $\Phi^{m}_{j}\sim h(\theta\given\Theta^{m-1}_{j}\giventh \sigma_m)$ for $j$ in $1\mycolon J$\\
+\asp     $X_{j}^{m}\sim f_{X}(x\giventh \Phi^{m}_{j})$ for $j$ in $1\mycolon J$\\
+\asp  $w_{j}^m = f_{Y|X}(y^*\given X_{j}^{m}\giventh \Phi^{m}_{j})$ for $j$ in $1\mycolon J$ \\
+\asp  Draw $k_{1:J}$ with $\prob(k_j=i)=  w_{n,i}^m\Big/\sum_{u=1}^J w_{n,u}^m$  \\
+\asp  $\Theta^{m}_{j}=\Phi^{m}_{k_j}$ for $j$ in $1\mycolon J$  \\
+End For\\
+\hline
+\end{tabular}

@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\input{header-if2}
+
+\newcommand\listA{D}
+\newcommand\listB{B}
+
+\newcommand\Ca{C}
+\newcommand\Cb{C_3}
+\newcommand\Cc{C_4}
+%\newcommand\Ca{C_4}
+%\newcommand\Cb{C_5}
+%\newcommand\Cc{C_6}
+
+\newcommand\Disc{\mathrm{Disc}}
+
+\usepackage{fullpage}
+\renewcommand{\contentsname}{Contents}
+\renewcommand{\refname}{References}
+\renewcommand\thefigure{T-\arabic{figure}}
+\renewcommand\thetable{T-\arabic{table}}
+\renewcommand\thepage{T-\arabic{page}}
+\renewcommand\thesection{T\arabic{section}}
+\renewcommand\theequation{T\arabic{equation}}
+\renewcommand\thelemma{T\arabic{lemma}}
+\renewcommand\thetheorem{T\arabic{theorem}}
+\renewcommand\theprop{T\arabic{prop}}
+%\setcounter{lemma}{1}
+
+\def\rmd{\mathrm{d}}
+\newcommand{\eqdef}{\ensuremath{\stackrel{\mathrm{def}}{=}}}
+\def\PE{\mathbb{E}} % esperance
+
+
+%\usepackage[numbers,sort&compress]{natbib}
+\usepackage{natbib}
+%\bibliographystyle{pnas}
+\bibliographystyle{apalike}
+
+
+\begin{document}
+\begin{center}
+{\bf \Large 
+Unpublished technical notes for ``A new iterated filtering algorithm''
+}
+\end{center}
+\bigskip
+\begin{center}
+\textbf{Edward L. Ionides$^1$, D. Nguyen$^1$, Y. Atchad\'{e}$^1$, S. Stoev$^1$ and A. A. King$^2$}
+ 
+\vspace{3mm}
+\today
+\vspace{3mm}
+
+{\small 
+$^1$ Department of Statistics and $^2$Department of Ecology \& Evolutionary Biology,\\
+The University of Michigan, Ann Arbor, Michigan, USA.  \\
+email: ionides@umich.edu, nguyenxd@umich.edu, yvesa@umich.edu, sstoev@umich.edu, kingaa@umich.edu
+
+\medskip
+
+}
+
+\vspace{2cm}
+
+\parbox{5in}{These notes describe some unpublished material, such as extra steps in proofs and discussion points that didn't get placed into the paper or supplement. 
+They are relatively unpolished and are not part of the peer-reviewed materials.
+}
+\end{center}
+
+
+\vspace{2cm}
+
+
+\tableofcontents
+
+\newpage
+
+\section{A comment on Equation~[4] in the statement of Theorem~1}
+
+Our theory does not address how the bound on the Monte~Carlo error in equation~[4] depends on $\sigma$.
+The constant $C$ in [4] could grow quickly as $\sigma$ becomes small. 
+However, this does not appear to result in numerical problems for the methodology. 
+This may be because a weaker result than [4] would be adequate to explain the numerical performance of the algorithm, replacing
+\begin{equation} %\nonumber 
+\label{eq:thm:stable:2}
+\E\bigg\{ \Big| \frac{1}{J}\sum_{j=1}^J\phi(\Theta^M_j) -\! \int \! \phi(\theta)f_\sigma(\theta)\, d\theta \Big| \bigg\}
+\le \frac{\sup_\theta|\phi(\theta)|}{C \, \sqrt{J}}.
+\end{equation}
+by 
+\begin{equation} %\nonumber 
+\label{eq:thm:stable:3}
+\left|\E\bigg\{\frac{1}{J}\sum_{j=1}^J\phi(\Theta^M_j) -\! \int \! \phi(\theta)f_\sigma(\theta)\, d\theta  \bigg\}\right|
+\le \frac{\sup_\theta|\phi(\theta)|}{C \, \sqrt{J}}.
+\end{equation}
+Whereas \eqref{eq:thm:stable:2} requires the empirical distribution of all $J$ particles to approximate $f_\sigma$ at a fixed time $M$, \eqref{eq:thm:stable:3} requires a single particle to approximate a draw from $f_\sigma$
+\citep[e.g., equations 3.3.14 and 3.3.15 of][]{delmoral01b}. 
+A bound such as \eqref{eq:thm:stable:3} is sufficient to study the performance of IF2, since (i) it implies that the particles have a high probability of being in a region in which $f_\sigma$ concentrates, which is our immediate goal; (ii) assuming mixing, it allows us to use a long iterated filtering sequence to give a good approximation to the full distribution $f_\sigma$, even if the approximation based on any single filtering iteration is poor.
+One might expect that \eqref{eq:thm:stable:3} performs much better than \eqref{eq:thm:stable:2} as sigma becomes small.
+
+We note that the SMC convergence result in Theorem~1 plays no role in our Theorem~2, and practical convergence of the algorithm is assessed empirically rather than relying on theoretical results.
+Further, theoretical results such as \eqref{eq:thm:stable:2} are more commonly considered in the literature than \eqref{eq:thm:stable:3}.
+Finally, since we have proved the stronger result \eqref{eq:thm:stable:2}, proper clarification of why the weaker result \eqref{eq:thm:stable:3} may be preferable would require some delicate reasoning that is outside the scope of this paper.
+
+\section{Checking $e_1<e_2$ in the proof of Theorem~2}
+
+Write $D=\lambda_0-\lambda_2$. We compute
+\begin{eqnarray}\nonumber
+e_1&\le& (1-\epsilon_1)\left[ \log(\lambda_0)+\frac{\epsilon_2}{\lambda_0}\right] + \epsilon_1\left[ \log(\lambda_0)-\frac{D}{\lambda_0} +\frac{\epsilon_2}{\lambda_0}\right]\\
+\label{eq:t1}
+&=& \log(\lambda_0)- \frac{(\epsilon_1D-\epsilon_2)}{\lambda_0}.
+\end{eqnarray}
+As long as $\eta_2<\lambda_3/2$, we have
+\begin{eqnarray}\label{eq:t2}
+e_2 &>& (1-\eta_1)\log(\lambda_1-\eta_2) +\eta_1\log(\lambda_3/2)
+\end{eqnarray}
+Pick $\epsilon_2<D\epsilon_1$, so that $e_1<\log(\lambda_0)$ from \eqref{eq:t1}. 
+This, together with the continuity of the $\log$ function,  allows us to pick $\lambda_1<\lambda_0$  and $\eta_2>0$ such that 
+\begin{equation}\label{eq:t3}
+\log(\lambda_1-\eta_2)> e_1.
+%\log(\lambda_0)- \frac{(\epsilon_1D-\epsilon_2)}{\lambda_0}.
+\end{equation}
+%Thus, when $\eta_1=0$, 
+%Using \eqref{eq:t3}, and 
+Therefore, the continuity of the right hand side of \eqref{eq:t2} as a function of $\eta_1$ implies the existence of an $\eta_1>0$ such that $e_2>e_1$.
+
+\section{Checking the derivation of Equation~[7] in the proof of Theorem~2}
+
+To help readers validate the proof of Theorem~2, here are some extra steps in the bound on $\prob_{\breve Z}[F_1]$ in the argument leading to equation~[7], considering only the numerator since the denominator follows a similar argument.
+\begin{eqnarray*}
+\label{eq:like5}
+\hspace{-3mm} 
+\E_{\breve \Theta}\big[\breve\lik_{1:\Msigma}\, 1_{F_1}\big] &=&
+\E_{\breve \Theta}\left[  \prod_{m=1}^M \breve\lik(\theta^m_{0:N})\, 1_{F_1}\right] \\
+\label{eq:like6}
+&\le& 
+\E_{\breve \Theta}\left[\prod_{m=1}^M \big\{ \lik(\theta^m_N)+C_2\sigma \big\} \, 1_{F_1}\right]
+\\
+\nonumber
+&=&
+\E_{\breve \Theta}\left[\prod_{m:\lik(\theta^m_N)\le\lambda_2}(\lambda_2+C_2\sigma) \prod_{m:\lik(\theta^m_N)>\lambda_2}(\lambda_0+C_2\sigma)\, 1_{F_1}\right] \\
+\nonumber
+&=& \E_{\breve \Theta}\left[\exp\left\{ \sum_{m:\lik(\theta^m_N)\le\lambda_2}\log(\lambda_2+C_2\sigma) +\sum_{m:\lik(\theta^m_N)>\lambda_2}\log(\lambda_0+C_2\sigma)\right\}\, 1_{F_1} \right]\\
+\nonumber
+&\le& 
+\E_{\breve \Theta}\Big[\exp\big\{ M\epsilon_1\log(\lambda_2+C_2\sigma) + M(1-\epsilon_1)\log(\lambda_0+C_2\sigma)\big\}\, 1_{F_1}\Big] \\
+&\le& 
+\label{eq:like6b}
+\E_{\breve \Theta}\big[\exp\left\{ Me_1\right\} \, 1_{F_1}\big] \\
+\label{eq:like7}
+&=& \exp\left\{Me_1\right\}\, \prob_{\breve \Theta}[F_1].
+\end{eqnarray*} 
+
+\bibliography{asa-abbrv,bib-eif}
+
+\end{document}
+
+

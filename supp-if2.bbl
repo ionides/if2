@@ -1,0 +1,124 @@
+\begin{thebibliography}{10}
+
+\bibitem{jacod87}
+Jacod, J \& Shiryaev, A.~N.
+\newblock (1987) {\em Limit theorems for stochastic processes}.
+\newblock (Springer-Verlag, Berlin).
+
+\bibitem{ionides11}
+Ionides, E.~L, Bhadra, A, Atchad\'{e}, Y,  \& King, A.~A.
+\newblock (2011) Iterated filtering.
+\newblock {\em Annals of Statistics} {\bf 39}, 1776--1802.
+
+\bibitem{doucet13}
+Doucet, A, Jacob, P.~E,  \& Rubenthaler, S.
+\newblock (2013) Derivative-free estimation of the score vector and observed
+  information matrix with application to state-space models.
+\newblock {\em Arxiv, {\small \texttt{http://arxiv.org/abs/1304.5768}}}.
+
+\bibitem{pomp}
+King, A.~A, Ionides, E.~L, Bret\'o, C.~M, Ellner, S,  \& Kendall, B.
+\newblock (2009) pomp: Statistical inference for partially observed markov
+  processes.
+\newblock {\em R package, available at {\small
+  \texttt{http://cran.r-project.org/web/packages/pomp}}}.
+
+\bibitem{janeliu01}
+Liu, J \& West, M.
+\newblock (2001) in {\em Sequential \mbox{M}onte \mbox{C}arlo Methods in
+  Practice}, eds.{} Doucet, A, de~Freitas, N,  \& Gordon, N.~J.
+\newblock (Springer, New York), pp. 197--224.
+
+\bibitem{kitagawa98}
+Kitagawa, G.
+\newblock (1998) A self-organising state-space model.
+\newblock {\em Journal of the American Statistical Association} {\bf 93},
+  1203--1215.
+
+\bibitem{anderson79}
+Anderson, B.~D \& Moore, J.~B.
+\newblock (1979) {\em Optimal Filtering}.
+\newblock (Prentice-Hall, New Jersey).
+
+\bibitem{wan00}
+Wan, E \& van~der Merwe, R.
+\newblock (2000) {\em The unscented {K}alman filter for nonlinear estimation}.
+\newblock (IEEE), pp. 153--158.
+
+\bibitem{pitt99}
+Pitt, M.~K \& Shepard, N.
+\newblock (1999) Filtering via simulation: Auxillary particle filters.
+\newblock {\em Journal of the American Statistical Association} {\bf 94},
+  590--599.
+
+\bibitem{breto09}
+Bret\'{o}, C, He, D, Ionides, E.~L,  \& King, A.~A.
+\newblock (2009) Time series analysis via mechanistic models.
+\newblock {\em Annals of Applied Statistics} {\bf 3}, 319--348.
+
+\bibitem{he10}
+He, D, Ionides, E.~L,  \& King, A.~A.
+\newblock (2010) Plug-and-play inference for disease dynamics: Measles in large
+  and small towns as a case study.
+\newblock {\em Journal of the Royal Society Interface} {\bf 7}, 271--283.
+
+\bibitem{johansen08b}
+Johansen, A.~M \& Doucet, A.
+\newblock (2008) A note on the auxiliary particle filter.
+\newblock {\em Statistics and Probability Letters} {\bf 78}, 1498--1504.
+
+\bibitem{storvik02}
+Storvik, G.
+\newblock (2002) Particle filters for state-space models with the presence of
+  unknown static parameters.
+\newblock {\em IEEE Transactions on Signal Processing} {\bf 50}, 281--289.
+
+\bibitem{chopin13}
+Chopin, N, Jacob, P.~E,  \& Papaspiliopoulos, O.
+\newblock (2013) {SMC}$^2$: an efficient algorithm for sequential analysis of
+  state space models.
+\newblock {\em Journal of the Royal Statistical Society, Series B (Statistical
+  Methodology)} {\bf 75}, 397--426.
+
+\bibitem{bengtsson08}
+Bengtsson, T, Bickel, P,  \& Li, B.
+\newblock (2008) in {\em Probability and Statistics: Essays in Honor of {D}avid
+  {A}. {F}reedman}, eds.{} Speed, T \& Nolan, D.
+\newblock (Institute of Mathematical Statistics, Beachwood, OH), pp. 316--334.
+
+\bibitem{liu01a}
+Liu, J.~S.
+\newblock (2001) {\em Monte \mbox{C}arlo Strategies in Scientific Computing}.
+\newblock (Springer, New York).
+
+\bibitem{bossy04}
+Bossy, M, Gobet, E,  \& Talay, D.
+\newblock (2004) A symmetrized {E}uler scheme for an efficient approximation of
+  reflected diffusions.
+\newblock {\em Journal of Applied Probability} pp. 877--889.
+
+\bibitem{eveson95}
+Eveson, S.~P.
+\newblock (1995) Hilbert's projective metric and the spectral properties of
+  positive linear operators.
+\newblock {\em Proceedings of the London Mathematical Society} {\bf 3},
+  411--440.
+
+\bibitem{legland04}
+Le~Gland, F \& Oudjane, N.
+\newblock (2004) Stability and uniform approximation of nonlinear filters using
+  the {H}ilbert metric and application to particle filters.
+\newblock {\em Annals of Applied Probability} {\bf 14}, 144--187.
+
+\bibitem{crisan02}
+Crisan, D \& Doucet, A.
+\newblock (2002) A survey of convergence results on particle filtering methods
+  for practitioners.
+\newblock {\em IEEE Transactions on Signal Processing} {\bf 50}, 736--746.
+
+\bibitem{king08}
+King, A.~A, Ionides, E.~L, Pascual, M,  \& Bouma, M.~J.
+\newblock (2008) Inapparent infections and cholera dynamics.
+\newblock {\em Nature} {\bf 454}, 877--880.
+
+\end{thebibliography}

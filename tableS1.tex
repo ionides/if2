@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+\input{header-if2}
+\begin{document}
+
+\begin{table}
+\begin{center}
+\caption{Parameters for the cholera model. 
+}\label{tab:chol-params}
+\begin{tabular}{lrrr}
+  \hline
+ & \rule[-1.5mm]{0mm}{7mm}\hspace{8mm}$\hat\theta$
+ & \hspace{14mm}$\theta_{\mathrm{low}}$ & \hspace{10mm} $\theta_{\mathrm{high}}$ \\ 
+  \hline
+$\gamma$ & 20.80 & 10.00 & 40.00 \\ 
+  $\epsilon$ & 19.10 & 0.20 & 30.00 \\ 
+  $m$ & 0.06 & 0.03 & 0.60 \\ 
+  $\beta_{\mathrm{trend}}\times 10^2$ & -0.50 & -1.00 & 0.00 \\ 
+  $\beta_1$ & 0.75 & -4.00 & 4.00 \\ 
+  $\beta_2$ & 6.38 & 0.00 & 8.00 \\ 
+  $\beta_3$ & -3.44 & -4.00 & 4.00 \\ 
+  $\beta_4$ & 4.23 & 0.00 & 8.00 \\ 
+  $\beta_5$ & 3.33 & 0.00 & 8.00 \\ 
+  $\beta_6$ & 4.55 & 0.00 & 8.00 \\ 
+  $\omega_1$ & -1.69 & -10.00 & 0.00 \\ 
+  $\omega_2$ & -2.54 & -10.00 & 0.00 \\ 
+  $\omega_3$ & -2.84 & -10.00 & 0.00 \\ 
+  $\omega_4$ & -4.69 & -10.00 & 0.00 \\ 
+  $\omega_5$ & -8.48 & -10.00 & 0.00 \\ 
+  $\omega_6$ & -4.39 & -10.00 & 0.00 \\ 
+  $\sigma$ & 3.13 & 1.00 & 5.00 \\ 
+  $\tau$ & 0.23 & 0.10 & 0.50 \\ 
+  $S_0$ & 0.62 & 0.00 & 1.00 \\ 
+  $I_0$ & 0.38 & 0.00 & 1.00 \\ 
+  $R_{1,0}$ & 0.00 & 0.00 & 1.00 \\ 
+  $R_{2,0}$ & 0.00 & 0.00 & 1.00 \\ 
+  $R_{3,0}$ & 0.00 & 0.00 & 1.00 \\ 
+   \hline
+\end{tabular}
+%\begin{center}
+\parbox{8cm}{\small
+{$\hat\theta$ is the MLE reported by \cite{king08}.
+Three parameters were fixed ($\delta=0.02$, $N_s=6$ and $k=3$) following \cite{king08}. 
+Units are year$^{-1}$ for $\gamma$, $\epsilon$, $m$, $\beta_{\mathrm{trend}}$ and $\delta$;  all other parameters are dimensionless.
+$\theta_\mathrm{low}$ and $\theta_\mathrm{high}$ are the lower and upper bounds for a hyper-rectangle used to generate starting points for the search.
+Non-negative parameters ($\gamma$, $\epsilon$, $m$, $\sigma$, $\tau$) were logarithmically transformed for optimization.
+Unit scale parameters ($S_0$, $I_0$, $R_{1,0}$, $R_{2,0}$,  $R_{3,0}$) were optimized on a logistic scale. 
+These parameters were rescaled using the known population size to give the initial state variables, e.g., $S(t_0)=S_0\{ S_0+I_0+R_{1,0}+R_{2,0}+R_{3,0}\}^{-1} P(t_0)$.}
+} 
+\end{center}
+\end{table}
+
+\end{document}

@@ -1,0 +1,212 @@
+\begin{thebibliography}{10}
+
+\bibitem{ionides06-pnas}
+Ionides, E.~L, Bret\'{o}, C,  \& King, A.~A.
+\newblock (2006) Inference for nonlinear dynamical systems.
+\newblock {\em Proc. Natl. Acad. Sci. USA} {\bf 103}, 18438--18443.
+
+\bibitem{ionides11}
+Ionides, E.~L, Bhadra, A, Atchad\'{e}, Y,  \& King, A.~A.
+\newblock (2011) Iterated filtering.
+\newblock {\em Ann. Stat.} {\bf 39}, 1776--1802.
+
+\bibitem{doucet13}
+Doucet, A, Jacob, P.~E,  \& Rubenthaler, S.
+\newblock (2013) Derivative-free estimation of the score vector and observed
+  information matrix with application to state-space models.
+\newblock {\em Arxiv, {\small \texttt{http://arxiv.org/abs/1304.5768}}}.
+
+\bibitem{lindstrom12}
+Lindstr\"{o}m, E, Ionides, E.~L, Frydendall, J,  \& Madsen, H.
+\newblock (2012) Efficient iterated filtering.
+\newblock {\em 16th IFAC Symposium on System Identification} {\bf 16},
+  1785--1790.
+
+\bibitem{lele07}
+Lele, S.~R, Dennis, B,  \& Lutscher, F.
+\newblock (2007) Data cloning: easy maximum likelihood estimation for complex
+  ecological models using {B}ayesian {M}arkov chain {M}onte {C}arlo methods.
+\newblock {\em Ecology Letters} {\bf 10}, 551--563.
+
+\bibitem{lele10}
+Lele, S.~R, Nadeem, K,  \& Schmuland, B.
+\newblock (2010) Estimability and likelihood inference for generalized linear
+  mixed models using data cloning.
+\newblock {\em J. Am. Stat. Assoc.} {\bf 105}, 1617--1625.
+
+\bibitem{doucet02}
+Doucet, A, Godsill, S.~J,  \& Robert, C.~P.
+\newblock (2002) Marginal maximum a posteriori estimation using {M}arkov chain
+  {M}onte {C}arlo.
+\newblock {\em Statistics and Computing} {\bf 12}, 77--84.
+
+\bibitem{gaetan03}
+Gaetan, C \& Yao, J.-F.
+\newblock (2003) A multiple-imputation {M}etropolis version of the {EM}
+  algorithm.
+\newblock {\em Biometrika} {\bf 90}, 643--654.
+
+\bibitem{jacquier07}
+Jacquier, E, Johannes, M,  \& Polson, N.
+\newblock (2007) {MCMC} maximum likelihood for latent state models.
+\newblock {\em J. Econometrics} {\bf 137}, 615--640.
+
+\bibitem{king08}
+King, A.~A, Ionides, E.~L, Pascual, M,  \& Bouma, M.~J.
+\newblock (2008) Inapparent infections and cholera dynamics.
+\newblock {\em Nature} {\bf 454}, 877--880.
+
+\bibitem{laneri10}
+Laneri, K, Bhadra, A, Ionides, E.~L, Bouma, M, Yadav, R, Dhiman, R,  \&
+  Pascual, M.
+\newblock (2010) Forcing versus feedback: Epidemic malaria and monsoon rains in
+  {NW} {I}ndia.
+\newblock {\em PLoS Comp. Biol.} {\bf 6}, e1000898.
+
+\bibitem{he10}
+He, D, Ionides, E.~L,  \& King, A.~A.
+\newblock (2010) Plug-and-play inference for disease dynamics: Measles in large
+  and small towns as a case study.
+\newblock {\em J. R. Soc. Interface} {\bf 7}, 271--283.
+
+\bibitem{blackwood13}
+Blackwood, J.~C, Cummings, D. A.~T, Broutin, H, Iamsirithaworn, S,  \& Rohani,
+  P.
+\newblock (2013) Deciphering the impacts of vaccination and immunity on
+  pertussis epidemiology in {T}hailand.
+\newblock {\em Proc. Natl. Acad. Sci. USA} {\bf 110}, 9595--9600.
+
+\bibitem{shrestha13}
+Shrestha, S, Foxman, B, Weinberger, D.~M, Steiner, C, Viboud, C,  \& Rohani, P.
+\newblock (2013) Identifying the interaction between influenza and pneumococcal
+  pneumonia using incidence data.
+\newblock {\em Science Transl. Med.} {\bf 5}, 191ra84.
+
+\bibitem{blake14}
+Blake, I.~M, Martin, R, Goel, A, Khetsuriani, N, Everts, J, Wolff, C, Wassilak,
+  S, Aylward, R.~B,  \& Grassly, N.~C.
+\newblock (2014) The role of older children and adults in wild poliovirus
+  transmission.
+\newblock {\em Proc. Natl. Acad. Sci. USA} {\bf 111}, 10604--10609.
+
+\bibitem{breto09}
+Bret\'{o}, C, He, D, Ionides, E.~L,  \& King, A.~A.
+\newblock (2009) Time series analysis via mechanistic models.
+\newblock {\em Ann. Appl. Stat.} {\bf 3}, 319--348.
+
+\bibitem{andrieu10}
+Andrieu, C, Doucet, A,  \& Holenstein, R.
+\newblock (2010) Particle {M}arkov chain {M}onte {C}arlo methods.
+\newblock {\em J. R. Stat. Soc. B} {\bf 72}, 269--342.
+
+\bibitem{toni09}
+Toni, T, Welch, D, Strelkowa, N, Ipsen, A,  \& Stumpf, M.~P.
+\newblock (2009) Approximate {B}ayesian computation scheme for parameter
+  inference and model selection in dynamical systems.
+\newblock {\em J. R. Soc. Interface} {\bf 6}, 187--202.
+
+\bibitem{wood10}
+Wood, S.~N.
+\newblock (2010) Statistical inference for noisy nonlinear ecological dynamic
+  systems.
+\newblock {\em Nature} {\bf 466}, 1102--1104.
+
+\bibitem{shaman12}
+Shaman, J \& Karspeck, A.
+\newblock (2012) Forecasting seasonal outbreaks of influenza.
+\newblock {\em Proc. Natl. Acad. Sci. USA} {\bf 109}, 20425--20430.
+
+\bibitem{kitagawa98}
+Kitagawa, G.
+\newblock (1998) A self-organising state-space model.
+\newblock {\em J. Am. Stat. Assoc.} {\bf 93}, 1203--1215.
+
+\bibitem{janeliu01}
+Liu, J \& West, M.
+\newblock (2001) in {\em Sequential \mbox{M}onte \mbox{C}arlo Methods in
+  Practice}, eds.{} Doucet, A, de~Freitas, N,  \& Gordon, N.~J.
+\newblock (Springer, New York), pp. 197--224.
+
+\bibitem{arulampalam02}
+Arulampalam, M.~S, Maskell, S, Gordon, N,  \& Clapp, T.
+\newblock (2002) A tutorial on particle filters for online nonlinear,
+  non-{G}aussian {B}ayesian tracking.
+\newblock {\em IEEE Trans. Sig. Proc.} {\bf 50}, 174 -- 188.
+
+\bibitem{doucet01}
+Doucet, A, de~Freitas, N,  \& Gordon, N.~J, eds.
+\newblock (2001) {\em Sequential \mbox{M}onte \mbox{C}arlo Methods in
+  Practice}.
+\newblock (Springer, New York).
+
+\bibitem{ingber93}
+Ingber, L.
+\newblock (1993) Simulated annealing: Practice versus theory.
+\newblock {\em Mathematical and Computer Modelling} {\bf 18}, 29--57.
+
+\bibitem{legland04}
+Le~Gland, F \& Oudjane, N.
+\newblock (2004) Stability and uniform approximation of nonlinear filters using
+  the {H}ilbert metric and application to particle filters.
+\newblock {\em Ann. Appl. Prob.} {\bf 14}, 144--187.
+
+\bibitem{eveson95}
+Eveson, S.~P.
+\newblock (1995) Hilbert's projective metric and the spectral properties of
+  positive linear operators.
+\newblock {\em Proc. Lond. Math. Soc.} {\bf 3}, 411--440.
+
+\bibitem{delmoral04saa}
+Del~Moral, P \& Doucet, A.
+\newblock (2004) Particle motions in absorbing medium with hard and soft
+  obstacles.
+\newblock {\em Stochastic Analysis and Applications} {\bf 22}, 1175--1207.
+
+\bibitem{whiteley12}
+Whiteley, N, Kantas, N,  \& Jasra, A.
+\newblock (2012) Linear variance bounds for particle approximations of
+  time-homogeneous {F}eynman--{K}ac formulae.
+\newblock {\em Stochastic Processes and their Applications} {\bf 122},
+  1840--1865.
+
+\bibitem{bhadra10}
+Bhadra, A.
+\newblock (2010) Discussion of `particle {M}arkov chain {M}onte {C}arlo
+  methods' by {C}.\ {A}ndrieu, {A}.\ {D}oucet and {R}.\ {H}olenstein.
+\newblock {\em J. R. Stat. Soc. B} {\bf 72}, 314--315.
+
+\bibitem{wilkinson12}
+Wilkinson, D.~J.
+\newblock (2012) {\em Stochastic Modelling for Systems Biology}.
+\newblock (Chapman \& Hall, Boca Raton, FL).
+
+\bibitem{keeling09}
+Keeling, M \& Rohani, P.
+\newblock (2009) {\em Modeling Infectious Diseases in Humans and Animals}.
+\newblock (Princeton Univ. Press, Princeton, NJ).
+
+\bibitem{pomp}
+King, A.~A, Ionides, E.~L, Bret\'o, C.~M, Ellner, S,  \& Kendall, B.
+\newblock (2009) pomp: Statistical inference for partially observed markov
+  processes.
+\newblock {\em R package, available at {\small
+  \texttt{http://cran.r-project.org/web/packages/pomp}}}.
+
+\bibitem{yang14}
+Yang, W, Karspeck, A,  \& Shaman, J.
+\newblock (2014) Comparison of filtering methods for the modeling and
+  retrospective forecasting of influenza epidemics.
+\newblock {\em PLoS Comp. Biol.} {\bf 10}, e1003583.
+
+\bibitem{julier04}
+Julier, S \& Uhlmann, J.
+\newblock (2004) Unscented filtering and nonlinear estimation.
+\newblock {\em Proc. IEEE} {\bf 92}, 401--422.
+
+\bibitem{cappe07}
+Capp\'{e}, O, Godsill, S,  \& Moulines, E.
+\newblock (2007) An overview of existing methods and recent advances in
+  sequential {M}onte {C}arlo.
+\newblock {\em Proc. IEEE} {\bf 95}, 899--924.
+
+\end{thebibliography}
